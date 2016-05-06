@@ -1,0 +1,7 @@
+## EXPIRES CACHING  ##
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresByType application/vnd.google-earth.kml+xml "access plus 10 seconds"
+    ExpiresDefault "access 2 days"
+</IfModule>
+## EXPIRES CACHING ##
