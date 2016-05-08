@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Bicing.xsl version 1-0
-
-Transforma xml proporcionat per OPENDATA Barcelona sobre estacions de bicing i estat a
-http://wservice.viabicing.cat/v1/getstations.php?v=1 en format kml compatible Google Maps
-
-Validació amb schema de Google https://developers.google.com/kml/schema/kml22gx.xsd
-
+*
+* Transformx XML provided by OPENDATA Barcelona about public bike stations and status
+* http://wservice.viabicing.cat/v1/getstations.php?v=1 into KML format compatible with Google Maps
+*
+* @author Jagova65
+* @version 1.0
+*
+*
 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output method="xml" encoding="UTF-8"></xsl:output>
@@ -70,11 +72,10 @@ Validació amb schema de Google https://developers.google.com/kml/schema/kml22gx
 			<!-- Estils emprats per estacións en funció del numero de bicis disponibles -->
 			<Style id='icon-503-empty-normal'>
 				<IconStyle>
-					<color>0033ff</color>
+					<scale>1.0</scale>
 					<Icon>
-						<href>http://www.bcn2006.com/Bicing/resources/img/empty.png</href>
+						<href><xsl:value-of select="concat($Host,'/resources/img/empty.png')"/></href>
 					</Icon>
-					<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'></hotSpot>
 				</IconStyle>
 			</Style>
 			<StyleMap id='icon-503-empty'>
@@ -85,11 +86,10 @@ Validació amb schema de Google https://developers.google.com/kml/schema/kml22gx
 			</StyleMap>
 			<Style id='icon-503-quart-normal'>
 				<IconStyle>
-					<color>0033ff</color>
+					<scale>1.0</scale>
 					<Icon>
-						<href>http://www.bcn2006.com/Bicing/resources/img/quart.png</href>
+						<href><xsl:value-of select="concat($Host,'/resources/img/quart.png')"/></href>
 					</Icon>
-					<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'></hotSpot>
 				</IconStyle>
 			</Style>
 			<StyleMap id='icon-503-quart'>
@@ -100,11 +100,10 @@ Validació amb schema de Google https://developers.google.com/kml/schema/kml22gx
 			</StyleMap>
 			<Style id='icon-503-half-normal'>
 				<IconStyle>
-					<color>0099ff</color>
+					<scale>1.0</scale>
 					<Icon>
-						<href>http://www.bcn2006.com/Bicing/resources/img/half.png</href>
+						<href><xsl:value-of select="concat($Host,'/resources/img/half.png')"/></href>
 					</Icon>
-					<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'></hotSpot>
 				</IconStyle>
 			</Style>
 			<StyleMap id='icon-503-half'>
@@ -115,11 +114,10 @@ Validació amb schema de Google https://developers.google.com/kml/schema/kml22gx
 			</StyleMap>
 			<Style id='icon-503-3quart-normal'>
 				<IconStyle>
-					<color>0033ff</color>
+					<scale>1.0</scale>
 					<Icon>
-						<href>http://www.bcn2006.com/Bicing/resources/img/3quart.png</href>
+						<href><xsl:value-of select="concat($Host,'/resources/img/3quart.png')"/></href>
 					</Icon>
-					<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'></hotSpot>
 				</IconStyle>
 			</Style>
 			<StyleMap id='icon-503-3quart'>
@@ -130,12 +128,10 @@ Validació amb schema de Google https://developers.google.com/kml/schema/kml22gx
 			</StyleMap>
 			<Style id='icon-503-full-normal'>
 				<IconStyle>
-					<color>33cc33</color>
+					<scale>1.0</scale>
 					<Icon>
-						<href>http://www.bcn2006.com/Bicing/resources/img/full.png</href>
+						<href><xsl:value-of select="concat($Host,'/resources/img/full.png')"/></href>
 					</Icon>
-					<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'>
-					</hotSpot>
 				</IconStyle>
 			</Style>
 			<StyleMap id='icon-503-full'>
@@ -146,12 +142,10 @@ Validació amb schema de Google https://developers.google.com/kml/schema/kml22gx
 			</StyleMap>
 			<Style id='icon-503-closed-normal'>
 				<IconStyle>
-					<color>33cc33</color>
+					<scale>1.0</scale>
 					<Icon>
-						<href>http://www.bcn2006.com/Bicing/resources/img/closed.png</href>
+						<href><xsl:value-of select="concat($Host,'/resources/img/closed.png')"/></href>
 					</Icon>
-					<hotSpot x='16' y='31' xunits='pixels' yunits='insetPixels'>
-					</hotSpot>
 				</IconStyle>
 			</Style>
 			<StyleMap id='icon-503-closed'>

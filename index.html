@@ -3,9 +3,9 @@
   <head>
     <title>BCN en Bici</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
+    <meta charset="utf-8">    <link rel="manifest" href="/manifest.json">
 	<meta name="mobile-web-app-capable" content="yes">
 	<link rel="shortcut icon" sizes="192x192" href="BCNBikeIcon.png">
     <link rel="stylesheet" type="text/css" href="./resources/css/general.css">  </head>
-  <body>	<div id="Controls" class="controls">		<div id="Bicing" class="button" onclick="toggleLayers('Bicing',bicingLayer)">			<p>Bicing</p>		</div>		<div id="Carrils" class="button" onclick="toggleLayers('Carrils',carrilLayer)">			<p>Carrils</p>		</div>		<div id="Ronda" class="button" onclick="toggleLayers('Ronda',rondaLayer)">			<p>Ronda Verda</p>		</div>		<div id="Ancor" class="button" onclick="toggleLayers('Ancor',ancorLayer)">			<p>Ancoratges</p>		</div>	</div>	<div id="refresh" class="refresh" onclick="refreshBicingLayer('refresh',bicingLayer)"></div>    <div id="map"></div>    <script src="./resources/js/bcnBikeMapRenderer-1.0.0.js"></script>
+  <body>	<div id="Controls" class="controls">		<div id="Bicing" class="button" onclick="toggleLayers('Bicing',bicingLayer)">			<p>Bicing</p>		</div>		<div id="Carrils" class="button" onclick="toggleLayers('Carrils',carrilLayer)">			<p>Carrils</p>		</div>		<div id="Vies" class="button" onclick="toggleLayers('Vies',viesLayer)">			<p>Vies Ciclables</p>		</div>		<div id="Ancor" class="button" onclick="toggleLayers('Ancor',ancorLayer)">			<p>Ancoratges</p>		</div>	</div>	<div id="refresh" class="refresh" onclick="refreshBicingLayer('refresh',bicingLayer)"></div>    <div id="map"></div>    <script src="./resources/js/bcnBikeMapRenderer-1.0.0.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJbg7S6AgeKPHMCzr1TckM-j3V6B0GQfc&callback=initMap"        async defer></script>  </body></html>
