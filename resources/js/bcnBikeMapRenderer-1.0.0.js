@@ -16,7 +16,7 @@
 
 
 var HOME_URL = document.URL;
-var BICINGLAYER_URL = HOME_URL + 'http://bcn2006.com/Bicing/resources/data/opendataBicing.out.kml';
+var BICINGLAYER_URL = 'http://bcn2006.com/Bicing/resources/data/opendataBicing.out.kml';
 var CARRILLAYER_URL = HOME_URL + '/resources/data/Carrils%20Bici.kmz';
 var VIESLAYER_URL = HOME_URL + '/resources/data/Vies.kmz';
 var ZONA30LAYER_URL = HOME_URL + '/resources/data/Zones%2030.kmz';
